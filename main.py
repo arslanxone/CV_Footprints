@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 import os
 
-DATA_DIR = './Input_Images/'
+DATA_DIR = './Images/'
 
 test_dir = os.path.join(DATA_DIR, 'test')
 ids = sorted(os.listdir(test_dir))
