@@ -15,10 +15,10 @@ Mask Extracted
 
 https://github.com/xavysp/DexiNed
 
-![GitHub Logo](/Images/preda/1.png)
+![GitHub Logo](/Images/preda/1..png)
 DexiNed model Output1
 
-![GitHub Logo](/Images/predf/1.png)
+![GitHub Logo](/Images/predf/1..png)
 DexiNed model Output2
 
 ## Step 3
