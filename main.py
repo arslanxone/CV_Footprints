@@ -1,4 +1,4 @@
-from .fpenhancement import FpEnhancement
+# from .fpenhancement import FpEnhancement
 import cv2
 import numpy as np
 import os
@@ -26,17 +26,18 @@ for i in range(len(x_test_dir)):
         fact = 0.6
         foot = cv2.resize(foot, (foot.shape[1], foot.shape[0]), fact, fact, cv2.INTER_CUBIC)
 
-    # Run the enhancement algorithm
-	enhancedImage = FpEnhancement.run(foot);
+    cv2.imwrite(DATA_DIR+"/FinalPrints/"+ids[i].split(".")[0]+".png",foot) 
+    # # Run the enhancement algorithm
+	# enhancedImage = FpEnhancement.run(foot);
 
-	# Doing the postProcessing
-	filter = FpEnhancement.postProcessingFilter(foot);
+	# # Doing the postProcessing
+	# filter = FpEnhancement.postProcessingFilter(foot);
 
-	# Finally applying the filter to get the end result
-	endRes = cv2.Scalar.all(0);
-	enhancedImage.copyTo(endRes, filter);
-	cv2.imshow("endRes", endRes  );
-	cv2.waitKey(0);
+	# # Finally applying the filter to get the end result
+	# endRes = cv2.Scalar.all(0);
+	# enhancedImage.copyTo(endRes, filter);
+	# cv2.imshow("endRes", endRes  );
+	# cv2.waitKey(0);
 
     # cv2.imshow("foot", foot)
     # cv2.waitKey(0)
